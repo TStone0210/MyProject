@@ -1,0 +1,568 @@
+@charset "UTF-8";
+
+
+
+#boardTbl {
+	font-family: "b";
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 20px;
+	box-shadow: #b9ffff 1px 1px 25px;
+	border-spacing: 0px;
+	background-color: #00000060;
+	width: 80%;
+	transition: all 0.05s ease-in-out;
+}
+
+
+
+#bTitle a {
+	font-size: 40pt;
+	color: #00FFFF;
+	text-shadow: #b9ffff 0px 0px 40px, #b9ffff 0px 0px 20px, #b9ffff 1px 1px 5px;
+	transition: all 0.05s ease-in-out;
+	text-decoration: none;
+}
+
+.boardTd {
+	border-top: 2px solid rgba(0, 255, 255, 0.3);
+}
+
+
+#bPP {
+	font-family: "b";
+	font-size: 14pt;
+	color: yellow;
+	text-shadow: orange 0px 0px 30px, orange 0px 0px 20px, orange 0px 0px 10px, #FFA50040 1px 1px 8px, #FFA50060 1px 1px 7px, #FFA50080 1px 1px 6px;
+}
+
+#bPPS {
+	font-family: "a";
+	font-size: 11pt;
+	font-weight: 900;
+	border: none;
+	border-radius: 10px;
+	width: 50px;
+	padding-left: 5px;
+
+}
+
+#boardImg {
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+}
+
+#boardWriter {
+	width: 120px;
+	min-width: 120px;
+	font-family: "b";
+	font-size: 14pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+}
+
+#boardTitle {
+	text-align: left;
+	padding-left: 10px;
+	min-width: 246px;
+	max-width: 246px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#boardTitle a {
+	font-family: "b";
+	font-size: 16pt;
+	color: white;
+	text-shadow: #00FFFF 1px 1px 5px;
+	text-decoration: none;
+}
+
+#boardTitle a:hover {
+	font-family: "b";
+	font-size: 16pt;
+	font-weight: 900;
+	color: white;
+	text-shadow: #00FFFF 0px 0px 10px, 1px 1px 5px;
+	text-decoration: none;
+}
+
+#boardWhen {
+	width: 150px;
+	min-width: 150px;
+	font-family: "b";
+	font-size: 14pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	white-space: nowrap;
+}
+
+#searchW {
+	font-family: "b";
+	font-size: 12pt;
+	border: none;
+	border-radius: 10px;
+	width: 80px;
+	padding-left: 5px;
+
+}
+
+#search {
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 240px;
+	padding-left: 10px;
+	font-family: "b";
+	font-size: 12pt;
+	color: white;
+	text-shadow: #820062 1px 1px 5px;
+}
+
+#search:focus {
+	background-color: #ffec4040;
+}
+
+#sBtn button {
+	border: none;
+	border-radius: 30px;
+	background-color: #82006250;
+	height: 30px;
+	width: 60px;
+	font-family: "b";
+	font-size: 17pt;
+	font-weight: 500;
+	color: white;
+}
+
+#wBtn button {
+	border: none;
+	border-radius: 30px;
+	background-color: #82006250;
+	height: 30px;
+	width: 80px;
+	font-family: "b";
+	font-size: 17pt;
+	font-weight: 500;
+	color: white;
+}
+
+#sBtn button:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+
+#wBtn button:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+
+#pageNum a {
+	width: 150px;
+	min-width: 150px;
+	font-family: "b";
+	font-size: 14pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	text-decoration: none;
+}
+
+#pageNum a:hover {
+	font-weight: 900;
+	text-shadow: #ff4040 0px 0px 10px, 1px 1px 5px;
+}
+
+#bwTbl {
+	font-family: "b";
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 17px;
+	box-shadow: #b9ffff 1px 1px 25px;
+	border-spacing: 0px;
+	background-color: #00000060;
+	width: 500px;
+	transition: all 0.05s ease-in-out;
+}
+
+#bwTitle {
+	height: 100px;
+	width: 50px;
+	color: yellow;
+	font-size: 21pt;
+	font-weight: 900;
+	text-shadow: orange 0px 0px 20px, orange 0px 0px 15px, orange 0px 0px 10px, #FFA50040 1px 1px 8px, #FFA50060 1px 1px 7px, #FFA50080 1px 1px 6px;
+	padding-left: 50px;
+}
+
+#bwTitle input {
+	border: none;
+	border-radius: 20px;
+	width: 70%;
+	font-family: "b";
+	font-size: 17pt;
+	background-color: #ffec4080;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	padding-left: 10px;
+}
+
+#bwTitle input:focus {
+	border: none;
+	background-color: #ffec4040;
+}
+
+#bwText {
+	border: none;
+	width: 80%;
+	height: 300px;
+	resize: none;
+	border-radius: 20px;
+	background-color: #ffec4080;
+	font-family: "b";
+	font-size: 15pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	padding: 10px;
+}
+
+#bwText:focus {
+	border: none;
+	background-color: #ffec4040;
+}
+
+#bwBtn {
+	height: 50px;
+}
+
+#bwBtn button {
+	border: none;
+	border-radius: 30px;
+	background-color: #82006250;
+	height: 30px;
+	width: 60px;
+	font-family: "b";
+	font-size: 17pt;
+	font-weight: 500;
+	color: white;
+}
+
+#bwBtn button:hover {
+	font-weight: 900;
+	background-color: #82006280;
+}
+
+#buTbl {
+	font-family: "b";
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 20px;
+	box-shadow: #b9ffff 1px 1px 25px;
+	border-spacing: 0px;
+	background-color: #00000060;
+	width: 500px;
+	transition: all 0.05s ease-in-out;
+}
+
+#buTitle {
+	height: 100px;
+	width: 50px;
+	color: yellow;
+	font-size: 21pt;
+	font-weight: 900;
+	text-shadow: orange 0px 0px 20px, orange 0px 0px 15px, orange 0px 0px 10px, #FFA50040 1px 1px 8px, #FFA50060 1px 1px 7px, #FFA50080 1px 1px 6px;
+	padding-left: 50px;
+}
+
+#buTitle input {
+	border: none;
+	border-radius: 20px;
+	width: 70%;
+	font-family: "b";
+	font-size: 17pt;
+	background-color: #ffec4080;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	padding-left: 10px;
+}
+
+#buTitle input:focus {
+	border: none;
+	background-color: #ffec4040;
+}
+
+#buText {
+	border: none;
+	width: 80%;
+	height: 300px;
+	resize: none;
+	border-radius: 20px;
+	background-color: #ffec4080;
+	font-family: "b";
+	font-size: 15pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	padding: 10px;
+}
+
+#buText:focus {
+	border: none;
+	background-color: #ffec4040;
+}
+
+#buBtn {
+	height: 50px;
+}
+
+#buBtn button {
+	border: none;
+	border-radius: 30px;
+	background-color: #82006250;
+	height: 30px;
+	width: 60px;
+	font-family: "b";
+	font-size: 17pt;
+	font-weight: 500;
+	color: white;
+}
+
+#buBtn button:hover {
+	font-weight: 900;
+	background-color: #82006280;
+}
+
+#brTbl {
+	font-family: "b";
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 20px;
+	box-shadow: #b9ffff 1px 1px 25px;
+	border-spacing: 0px;
+	background-color: #00000060;
+	margin-top: 20px;
+	width: 500px;
+	transition: all 0.05s ease-in-out;
+}
+
+#brImg {
+	width: 160px;
+	height: 160px;
+	background-color: #00000095;
+	border-radius: 20px 0px 0px 0px;
+	border-right: #00FFFF60 solid 2px;
+	border-bottom: #00FFFF60 solid 2px;
+}
+
+#brImg img{
+	width: 140px;
+	height: 140px;
+}
+
+#brTitle {
+	width: 100px;
+	font-size: 19pt;
+	color: #00FFFF;
+	text-shadow: #b9ffff 0px 0px 30px, #b9ffff 0px 0px 20px, #b9ffff 1px 1px 5px;
+	padding-right: 20px;
+}
+
+#brTitleContext {
+	font-size: 15pt;
+	color: white;
+	text-shadow: orange 0px 0px 20px, orange 0px 0px 15px, orange 0px 0px 10px, #FFA50040 1px 1px 8px, #FFA50060 1px 1px 7px, #FFA50080 1px 1px 6px;
+}
+
+#brWriter {
+	width: 100px;
+	font-size: 19pt;
+	color: #00FFFF;
+	text-shadow: #b9ffff 0px 0px 30px, #b9ffff 0px 0px 20px, #b9ffff 1px 1px 5px;
+	padding-right: 20px;
+}
+
+#brWriterContext {
+	font-size: 15pt;
+	color: white;
+	text-shadow: orange 0px 0px 20px, orange 0px 0px 15px, orange 0px 0px 10px, #FFA50040 1px 1px 8px, #FFA50060 1px 1px 7px, #FFA50080 1px 1px 6px;
+}
+
+#brWhen {
+	width: 100px;
+	font-size: 19pt;
+	color: #00FFFF;
+	text-shadow: #b9ffff 0px 0px 30px, #b9ffff 0px 0px 20px, #b9ffff 1px 1px 5px;
+	border-bottom: #00FFFF60 solid 2px;
+	padding-right: 20px;
+}
+
+#brWhenContext {
+	font-size: 13pt;
+	color: white;
+	text-shadow: orange 0px 0px 20px, orange 0px 0px 15px, orange 0px 0px 10px, #FFA50040 1px 1px 8px, #FFA50060 1px 1px 7px, #FFA50080 1px 1px 6px;
+	border-bottom: #00FFFF60 solid 2px;
+}
+
+#brText {
+	height: 500px;
+	padding: 15px;
+	vertical-align: top;
+	font-size: 15pt;
+	color: white;
+	text-shadow: #ff4040 0px 0px 20px, #ff4040 0px 0px 15px, #ff4040 0px 0px 10px, #ff404040 1px 1px 8px, #ff404060 1px 1px 7px, #ff404080 1px 1px 6px;
+}
+
+.rTbl {
+	position: relative;
+	margin-top: 10px;
+	font-family: "b";
+	border-radius: 20px;
+	box-shadow: #b9ffff 1px 1px 10px;
+	border-spacing: 0px;
+	background-color: #00000090;
+	width: 350px;
+}
+
+.rImg {
+	max-width: 60px;
+	height: 60px;
+	border-bottom: #00FFFF60 solid 2px;
+	border-right: #00FFFF60 solid 2px;
+}
+
+.rImg img{
+	border-radius: 20px;
+}
+
+.rWriter {
+	width: 120px;
+	font-size: 17pt;
+	color: #00FFFF;
+	text-shadow: #b9ffff 0px 0px 30px, #b9ffff 0px 0px 20px, #b9ffff 1px 1px 5px;
+	border-bottom: #00FFFF60 solid 2px;
+	padding-right: 20px;
+}
+
+.rWhen {
+	font-size: 13pt;
+	color: white;
+	text-shadow: orange 0px 0px 20px, orange 0px 0px 15px, orange 0px 0px 10px, #FFA50040 1px 1px 8px, #FFA50060 1px 1px 7px, #FFA50080 1px 1px 6px;
+	border-bottom: #00FFFF60 solid 2px;
+	padding-right: 10px;
+}
+
+.rText {
+	height: 50px;
+	width: 90%;
+	padding: 10px;
+	vertical-align: top;
+	font-size: 13pt;
+	color: white;
+	text-shadow: #ff4040 0px 0px 20px, #ff4040 0px 0px 15px, #ff4040 0px 0px 10px, #ff404040 1px 1px 8px, #ff404060 1px 1px 7px, #ff404080 1px 1px 6px;
+}
+
+.replyDeleteBtn {
+	border: none;
+	border-radius: 0px 50px 50px 0px;
+	background-color: #82006250;
+	height: 40px;
+	width: 50px;
+	font-family: "b";
+	font-size: 15pt;
+	font-weight: 500;
+	color: white;
+	position: absolute;
+}
+
+#replyDeleteBtn:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+
+#rwTbl {
+	margin-top: 20px;
+	width: 70%;
+	margin-bottom: 40px;
+}
+
+#rwText textarea {
+	resize: none;
+	border: none;
+	width: 40%;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #827b0095;
+	font-family: "b";
+	font-size: 13pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	padding: 10px;
+}
+
+
+#rwBtn {
+	border: none;
+	border-radius: 20px;
+	background-color: #82006250;
+	height: 30px;
+	width: 60px;
+	font-family: "b";
+	font-size: 15pt;
+	font-weight: 500;
+	color: white;
+}
+
+#rwBtn:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+
+#boardUpdateBtn {
+	border: none;
+	border-radius: 20px;
+	background-color: #82006250;
+	height: 40px;
+	width: 80px;
+	font-family: "b";
+	font-size: 18pt;
+	font-weight: 500;
+	color: white;
+}
+
+#boardUpdateBtn:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+#boardDeleteBtn {
+	border: none;
+	border-radius: 20px;
+	background-color: #82006250;
+	height: 40px;
+	width: 80px;
+	font-family: "b";
+	font-size: 18pt;
+	font-weight: 500;
+	color: white;
+}
+
+#boardDeleteBtn:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+
+
+#goBoardBtn {
+	border: none;
+	border-radius: 20px;
+	background-color: #82006250;
+	height: 40px;
+	width: 80px;
+	font-family: "b";
+	font-size: 18pt;
+	font-weight: 500;
+	color: white;
+}
+
+#goBoardBtn:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+
+
+

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+#loginTbl {
+	width: 250px;
+	max-width: 250px;
+	height: 250px;
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 30px;
+	background-color: #00000060;
+	box-shadow: #b9ffff 0px 0px 25px;
+	transition: all 0.05s ease-in-out;
+}
+
+.loginIndex {
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	text-shadow: black 1px 1px 5px;
+	font-family: "a";
+	font-size: 16pt;
+	font-weight: 900;
+	color: white;
+	padding-left: 10px;
+}
+
+#loginInputID input {
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 150px;
+	font-family: "b";
+	font-size: 13pt;
+	color: white;
+	padding-left: 10px;
+}
+
+#loginInputPW input {
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 150px;
+	font-family: "a";
+	font-size: 16pt;
+	color: white;
+	padding-left: 5px;
+}
+
+#loginInputID input:focus {
+	background-color: #ffec4040;
+}
+
+#loginInputPW input:focus {
+	background-color: #ffec4040;
+}
+
+#loginBtn button {
+	border: none;
+	border-radius: 20px;
+	background-color: #82006250;
+	height: 35px;
+	width: 85px;
+	font-family: "b";
+	font-size: 15pt;
+	font-weight: 500;
+	color: white;
+}
+
+#loginBtn button:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}
+
+#lsPhoto img {
+	border-radius: 70px;
+	box-shadow: white 1px 1px 3px;
+	max-width: 130px;
+	max-height: 130px;
+}
+
+#lsNickname {
+	font-family: "b";
+	font-size: 17pt;
+	text-shadow: #820062 1px 1px 5px;
+	color: white;
+}
+
+#lsBtn {
+	height: 50px;
+}
+
+#lsBtn button {
+	border: none;
+	border-radius: 20px;
+	background-color: #82006250;
+	height: 35px;
+	width: 85px;
+	font-family: "b";
+	font-size: 15pt;
+	font-weight: 500;
+	color: white;
+}
+
+#lsBtn button:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}

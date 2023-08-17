@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.miniproject.board.BoardMapper">
+	<select id="countAllBoardMsg" resultType="java.lang.Integer">
+		select count(*) from PROJECT_BOARD
+	</select>
+	<select id="countSearchMsgNickname" parameterType="com.yang.miniproject.board.Search" resultType="java.lang.Integer">
+		select count(*) from project_board, project_member 
+		where b_writer = m_nickname 
+		and b_writer like '%'||#{search}||'%'
+	</select>
+	<select id="countSearchMsgTitle" parameterType="com.yang.miniproject.board.Search" resultType="java.lang.Integer">
+		select count(*) from project_board, project_member 
+		where b_writer = m_nickname and 
+		b_title like '%'||#{search}||'%'
+	</select>
+	<select id="countSearchMsgText" parameterType="com.yang.miniproject.board.Search" resultType="java.lang.Integer">
+		select count(*) from project_board, project_member 
+		where b_writer = m_nickname and 
+		b_text like '%'||#{search}||'%'
+	</select>
+	<select id="getMsg" parameterType="com.yang.miniproject.board.Search" resultType="com.yang.miniproject.board.Board">
+		select *
+			from (
+				select rownum as rn, b_no, b_title, b_writer, b_when, b_text, m_photo
+					from (
+						select *
+							from project_board, project_member
+								where b_writer = m_nickname 
+								order by b_no desc
+					)
+			)
+			where rn &gt;= #{start} and rn &lt;= #{end}
+	</select>
+	<select id="getMsgNickname" parameterType="com.yang.miniproject.board.Search" resultType="com.yang.miniproject.board.Board">
+		select *
+			from (
+				select rownum as rn, b_no, b_title, b_writer, b_when, b_text, m_photo
+					from (
+						select *
+							from project_board, project_member
+								where b_writer = m_nickname 
+								and b_writer like '%'||#{search}||'%'
+								order by b_no desc
+					)
+			)
+			where rn &gt;= #{start} and rn &lt;= #{end}
+	</select>
+	<select id="getMsgTitle" parameterType="com.yang.miniproject.board.Search" resultType="com.yang.miniproject.board.Board">
+		select *
+			from (
+				select rownum as rn, b_no, b_title, b_writer, b_when, b_text, m_photo
+					from (
+						select *
+							from project_board, project_member
+								where b_writer = m_nickname 
+								and b_title like '%'||#{search}||'%'
+								order by b_no desc
+					)
+			)
+			where rn &gt;= #{start} and rn &lt;= #{end}
+	</select>
+	<select id="getMsgText" parameterType="com.yang.miniproject.board.Search" resultType="com.yang.miniproject.board.Board">
+		select *
+			from (
+				select rownum as rn, b_no, b_title, b_writer, b_when, b_text, m_photo
+					from (
+						select *
+							from project_board, project_member
+								where b_writer = m_nickname 
+								and b_text like '%'||#{search}||'%'
+								order by b_no desc
+					)
+			)
+			where rn &gt;= #{start} and rn &lt;= #{end}
+	</select>
+	<insert id="boardWrite" parameterType="com.yang.miniproject.board.Board">
+		insert into project_board values(project_board_seq.nextval, #{b_title}, #{b_writer}, sysdate, #{b_text})
+	</insert>
+	<select id="boardRead" parameterType="com.yang.miniproject.board.BoardRead" resultType="com.yang.miniproject.board.Board">
+		select b_no, b_title, b_writer, b_when, b_text, m_photo from project_board, project_member where b_writer = m_nickname and b_no = #{b_no}
+	</select>
+	<insert id="replyWrite" parameterType="com.yang.miniproject.board.BoardReply">
+		insert into project_reply values(project_reply_seq.nextval, #{r_b_no}, #{r_writer}, sysdate, #{r_text})
+	</insert>
+	<select id="boardReply" parameterType="com.yang.miniproject.board.BoardRead" resultType="com.yang.miniproject.board.BoardReply">
+		select r_no, r_b_no, r_writer, r_when, r_text, m_photo from project_reply, project_member where r_writer = m_nickname and r_b_no = #{b_no } order by r_no
+	</select>
+	<delete id="boardDelete" parameterType="com.yang.miniproject.board.BoardRead">
+		delete from project_board where b_no = #{b_no}
+	</delete>
+	<update id="boardUpdate" parameterType="com.yang.miniproject.board.Board">
+		update project_board set b_title = #{b_title}, b_text = #{b_text} where b_no = #{b_no}
+	</update>
+	<delete id="replyDelete" parameterType="com.yang.miniproject.board.BoardReply">
+		delete from project_reply where r_no = #{r_no}
+	</delete>
+</mapper>

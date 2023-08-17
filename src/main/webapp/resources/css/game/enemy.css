@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+.enemy{
+	left: 1000px;
+	opacity: 0;
+}
+
+
+#meteor1 {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	z-index: 13;
+}
+
+#meteor2 {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	z-index: 12;
+}
+
+#meteor3 {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	z-index: 11;
+}
+
+#meteor4 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 10;
+}
+
+#meteor5 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 9;
+}
+
+#meteor6 {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	z-index: 8;
+}
+
+#meteor7 {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	z-index: 7;
+}
+
+#meteor8 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	z-index: 6;
+}
+
+#meteor9 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	z-index: 5;
+}
+
+#meteor10 {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	z-index: 4;
+}
+
+#meteor11 {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	z-index: 3;
+}
+
+#meteor12 {
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	z-index: 2;
+}
+
+#alien1a {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+}
+
+#alien1b {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+}
+
+#alien3 {
+	position: absolute;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+}
+
+#cannon1 {
+	position: absolute;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+}
+
+#cannon2 {
+	position: absolute;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+}
+
+#cannon3 {
+	position: absolute;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+}
+
+#cannon1B {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+#cannon2B {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+#cannon3B {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+
+
+
+

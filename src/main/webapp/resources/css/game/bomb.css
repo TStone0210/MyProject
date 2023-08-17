@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+#bombShot {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	left: 700px;
+}
+
+.bombE {
+	display: none;
+}
+
+#bombE1 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+#bombE2 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+#bombE3 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+#bombE4 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+#bombE5 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+#bombE6 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+#bombE7 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+#bombE8 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+
+
+

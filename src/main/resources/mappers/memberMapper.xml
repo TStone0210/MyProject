@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.miniproject.member.MemberMapper">
+	<select id="getById" parameterType="com.yang.miniproject.member.Member" resultType="com.yang.miniproject.member.Member">
+		select * from project_member where m_id = #{m_id}
+	</select>
+	<select id="getByNickname" parameterType="com.yang.miniproject.member.Member" resultType="com.yang.miniproject.member.Member">
+		select * from project_member where m_nickname = #{m_nickname}
+	</select>
+	<insert id="signup" parameterType="com.yang.miniproject.member.Member">
+		insert into project_member values (#{m_id}, #{m_password}, #{m_name}, #{m_nickname}, #{m_birthday}, #{m_addr}, #{m_photo})
+	</insert>
+	<delete id="memberOut" parameterType="com.yang.miniproject.member.Member">
+		delete from project_member where m_id = #{m_id}
+	</delete>
+	<update id="infoUpdate" parameterType="com.yang.miniproject.member.Member">
+		update project_member set m_password = #{m_password}, m_nickname = #{m_nickname}, m_name = #{m_name}, m_birthday = #{m_birthday}, m_addr = #{m_addr}, m_photo = #{m_photo} where m_id = #{m_id} 
+	</update>
+</mapper>

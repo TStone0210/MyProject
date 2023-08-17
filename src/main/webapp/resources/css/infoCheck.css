@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+#icTbl {
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 20px;
+	box-shadow: #b9ffff 1px 1px 25px;
+	background-color: #00000070;
+	width: 400px;
+	height: 300px;
+	transition: all 0.05s ease-in-out;
+}
+
+#icTitle {
+	font-family: "b";
+	font-size: 40pt;
+	color: #00FFFF;
+	text-align: center;
+	text-shadow: #b9ffff 0px 0px 40px, #b9ffff 0px 0px 20px, #b9ffff 1px 1px
+		5px;
+	transition: all 0.05s ease-in-out;
+}
+
+.icIndex {
+	width: 120px;
+	padding-right: 20px;
+	font-family: "a";
+	font-size: 22pt;
+	font-weight: 900;
+	color: white;
+	text-align: right;
+	text-shadow: #820062 1px 1px 5px;
+}
+
+#icInputID input {
+	font-family: "b";
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 200px;
+	font-size: 16pt;
+	color: white;
+	padding-left: 10px;
+}
+
+#icInputPW input {
+	font-family: "a";
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 200px;
+	font-size: 16pt;
+	color: white;
+	padding-left: 10px;
+}
+
+#icInputPW input:focus {
+	background-color: #ffec4040;
+}
+
+.icBtn {
+	border: none;
+	border-radius: 30px;
+	background-color: #82006250;
+	height: 40px;
+	width: 100px;
+	font-family: "b";
+	font-size: 22pt;
+	font-weight: 500;
+	color: white;
+}
+
+.icBtn:hover {
+	background-color: #82006280;
+	font-weight: 900; # infoTbl { font-family : "b";
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 20px;
+	box-shadow: #b9ffff 1px 1px 25px;
+	background-color: #00000060;
+	width: 600px;
+	height: 800px;
+	transition: all 0.05s ease-in-out;
+}
+

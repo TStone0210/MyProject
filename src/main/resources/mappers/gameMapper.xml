@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.miniproject.game.GameMapper">
+	<insert id="regScore" parameterType="com.yang.miniproject.game.Game">
+		insert into project_score values (project_score_seq.nextval, #{s_who}, #{s_photo}, #{s_score}, sysdate)
+	</insert>
+	<select id="seeScore" resultType="com.yang.miniproject.game.Game">
+		select * from project_score order by s_score desc
+	</select>
+</mapper>

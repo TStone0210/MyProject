@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+#signupTbl {
+	font-family: "b";
+	border: 4px solid rgba(0, 255, 255, 1);
+	border-radius: 20px;
+	box-shadow: #b9ffff 1px 1px 25px;
+	background-color: #00000060;
+	width: 600px;
+	height: 800px;
+	transition: all 0.05s ease-in-out;
+}
+
+#signupTitle {
+	font-size: 40pt;
+	color: #00FFFF;
+	text-align: center;
+	text-shadow: #b9ffff 0px 0px 40px, #b9ffff 0px 0px 20px, #b9ffff 1px 1px 5px;
+	transition: all 0.05s ease-in-out;
+}
+
+.signupIndex {
+	width: 120px;
+	padding-right: 20px;
+	font-family: "b";
+	font-size: 20pt;
+	font-weight: 900;
+	color: white;
+	text-align: right;
+	text-shadow: #820062 1px 1px 5px;
+}
+
+.signupInput input {
+	font-family: "b";
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 200px;
+	height: 30px;
+	font-size: 13pt;
+	color: white;
+	padding-left: 10px;
+}
+
+.signupInput input:focus {
+	background-color: #ffec4040;
+}
+
+.signupInput input::placeholder {
+	color: #FFFFFF90;
+}
+
+#signupIdChk {
+	font-family: "b";
+	font-size: 14pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	opacity: 0;
+}
+
+#signupNicknameChk {
+	font-family: "b";
+	font-size: 14pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+	opacity: 0;
+}
+
+#photoNotice {
+	font-family: "b";
+	font-size: 12pt;
+	color: white;
+	text-shadow: #ff4040 1px 1px 5px;
+}
+
+.signupInputPW input {
+	font-family: "a";
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 200px;
+	height: 30px;
+	font-size: 13pt;
+	color: white;
+	padding-left: 10px;
+}
+
+.signupInputPW input::placeholder {
+	color: #FFFFFF90;
+	font-family: "b";
+	font-size: 12pt;
+}
+
+.signupInputPW input:focus {
+	background-color: #ffec4040;
+}
+
+.signupBirth {
+	font-size: 14pt;
+	color: white;
+	text-shadow: #820062 1px 1px 5px;
+}
+
+.signupBirth input {
+	font-family: "a";
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 75px;
+	height: 30px;
+	font-size: 13pt;
+	font-weight: 900;
+	color: white;
+	padding-left: 10px;
+}
+
+.signupBirth input::placeholder {
+	color: #FFFFFF90;
+	font-family: "b";
+	font-size: 12pt;
+	font-weight: 500;
+}
+
+.signupBirth input:focus {
+	background-color: #ffec4040;
+}
+
+#signupInputAddr input {
+	font-family: "b";
+	border: none;
+	border-radius: 15px;
+	background-color: #ffec4080;
+	width: 350px;
+	height: 30px;
+	font-size: 13pt;
+	color: white;
+	padding-left: 10px;
+}
+
+#signupInputAddr input::placeholder {
+	color: #FFFFFF90;
+}
+
+#signupInputAddr input:focus {
+	background-color: #ffec4040;
+}
+
+#signupPhoto {
+	font-family: "b";
+	font-size: 12pt;
+	color: white;
+}
+
+#signupPhoto::file-selector-button {
+	border: none;
+	border-radius: 20px;
+	font-family: "b";
+	font-size: 12pt;
+	color: white;
+	background-color: #82006250
+}
+
+#signupPhoto::file-selector-button:hover {
+	cursor: pointer;
+	font-weight: 900;
+	background-color: #82006280
+}
+
+#signupBtn button {
+	border: none;
+	border-radius: 30px;
+	background-color: #82006250;
+	height: 40px;
+	width: 100px;
+	font-family: "b";
+	font-size: 17pt;
+	font-weight: 500;
+	color: white;
+}
+
+#signupBtn button:hover {
+	background-color: #82006280;
+	font-weight: 900;
+}

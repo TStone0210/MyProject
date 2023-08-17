@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.miniproject.cheese.CheeseMapper">
+	<select id="getCheese" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' order by c_fname
+	</select>
+	<select id="getCheeseWhere" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_where = #{cs_where}
+			order by c_fname
+	</select>
+	<select id="getCheeseHard" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_hard = #{cs_hard}
+			order by c_fname
+	</select>
+	<select id="getCheeseWhereHard" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_hard = #{cs_hard} and c_where = #{cs_where}
+			order by c_fname
+	</select>
+	<select id="getCheeseWhereEtc" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_where != '프랑스' and c_where != '스위스' and c_where != '이탈리아' and c_where != '영국' and c_where != '미국' and c_where != '그리스'
+			order by c_fname
+	</select>
+	<select id="getCheeseHardEtc" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_hard != '생치즈' and c_hard != '연성치즈' and c_hard != '반경성치즈' and c_hard != '경성치즈'
+			order by c_fname
+	</select>
+	<select id="getCheeseWhereHardEtc" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_hard != '생치즈' and c_hard != '연성치즈' and c_hard != '반경성치즈' and c_hard != '경성치즈' and c_where = #{cs_where}
+			order by c_fname
+	</select>
+	<select id="getCheeseHardWhereEtc" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_hard != '생치즈' and c_hard != '연성치즈' and c_hard != '반경성치즈' and c_hard != '경성치즈' and c_hard = #{cs_hard}
+			order by c_fname
+	</select>
+	<select id="getCheeseWhereEtcHardEtc" parameterType="com.yang.miniproject.cheese.CheeseSearch" resultType="com.yang.miniproject.cheese.Cheese">
+		select * from project_cheese 
+			where (c_name like '%'||#{cs_name}||'%' or c_fname like '%'||#{cs_name}||'%' )
+			and c_hard != '생치즈' and c_hard != '연성치즈' and c_hard != '반경성치즈' and c_hard != '경성치즈'
+			and c_where != '프랑스' and c_where != '스위스' and c_where != '이탈리아' and c_where != '영국' and c_where != '미국' and c_where != '그리스'
+			order by c_fname
+	</select>
+</mapper>
